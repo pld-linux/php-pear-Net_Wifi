@@ -29,7 +29,7 @@ networks and get a bunch of information about them.
 In PEAR status of this package is: %{_status}.
 
 %description -l pl
-Net_Wifi wykorzystuje programi "iwconfig" oraz "iwlist" do pobrania
+Net_Wifi wykorzystuje programy "iwconfig" oraz "iwlist" do pobrania
 informacji na temat interfejsów sieci bezprzewodowych oraz bie¿±cej
 konfiguracji. Klasa ta pozwala tak¿e na skanowanie w poszukiwaniu
 nowych sieci oraz uzyskanie o nich zestawu informacji.
@@ -68,5 +68,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files tests
 %defattr(644,root,root,755)
+%dir %{php_pear_dir}/tests/Net_Wifi
+%dir %{php_pear_dir}/tests/Net_Wifi/tests
 %{php_pear_dir}/tests/Net_Wifi/tests/runtest.php
 %{php_pear_dir}/tests/Net_Wifi/tests/Wifi_testcase.php
