@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - Scans for wireless networks
 Summary(pl):	%{_pearname} - Wyszukiwanie sieci bezprzewodowych
 Name:		php-pear-%{_pearname}
-Version:	0.1.0
+Version:	0.2.0
 Release:	1
 License:	PHP License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	6b3659bcc1cd9a9eb6d0eed85da47557
+# Source0-md5:	e99cf58d9e61096c18b2ce384bc104a5
 URL:		http://pear.php.net/package/Net_Wifi/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -65,6 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log docs/%{_pearname}/examples/Wifi_usage.php
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/Net/Wifi.php
+%{php_pear_dir}/Net/Wifi
 
 %files tests
 %defattr(644,root,root,755)
