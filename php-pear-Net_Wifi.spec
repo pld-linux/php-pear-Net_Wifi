@@ -5,7 +5,7 @@
 %define		_pearname	Net_Wifi
 
 Summary:	%{_pearname} - Scans for wireless networks
-Summary(pl):	%{_pearname} - Wyszukiwanie sieci bezprzewodowych
+Summary(pl.UTF-8):   %{_pearname} - Wyszukiwanie sieci bezprzewodowych
 Name:		php-pear-%{_pearname}
 Version:	0.2.0
 Release:	1
@@ -28,17 +28,17 @@ networks and get a bunch of information about them.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
+%description -l pl.UTF-8
 Net_Wifi wykorzystuje programy "iwconfig" oraz "iwlist" do pobrania
-informacji na temat interfejsów sieci bezprzewodowych oraz bie¿±cej
-konfiguracji. Klasa ta pozwala tak¿e na skanowanie w poszukiwaniu
+informacji na temat interfejsÃ³w sieci bezprzewodowych oraz bieÅ¼Ä…cej
+konfiguracji. Klasa ta pozwala takÅ¼e na skanowanie w poszukiwaniu
 nowych sieci oraz uzyskanie o nich zestawu informacji.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
@@ -46,7 +46,7 @@ AutoReq:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
