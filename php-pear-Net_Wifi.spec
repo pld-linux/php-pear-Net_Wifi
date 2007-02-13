@@ -5,7 +5,7 @@
 %define		_pearname	Net_Wifi
 
 Summary:	%{_pearname} - Scans for wireless networks
-Summary(pl.UTF-8):   %{_pearname} - Wyszukiwanie sieci bezprzewodowych
+Summary(pl.UTF-8):	%{_pearname} - Wyszukiwanie sieci bezprzewodowych
 Name:		php-pear-%{_pearname}
 Version:	0.2.0
 Release:	1
@@ -38,7 +38,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
