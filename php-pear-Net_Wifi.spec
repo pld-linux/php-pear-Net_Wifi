@@ -1,18 +1,18 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Net
 %define		_subclass	Wifi
-%define		_status		beta
+%define		_status		stable
 %define		_pearname	Net_Wifi
 
 Summary:	%{_pearname} - Scans for wireless networks
 Summary(pl.UTF-8):	%{_pearname} - Wyszukiwanie sieci bezprzewodowych
 Name:		php-pear-%{_pearname}
-Version:	0.2.0
+Version:	1.0.0
 Release:	1
 License:	PHP License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	e99cf58d9e61096c18b2ce384bc104a5
+# Source0-md5:	17e2feb355fe7c85a7e585c8f9529013
 URL:		http://pear.php.net/package/Net_Wifi/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -69,7 +69,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files tests
 %defattr(644,root,root,755)
-%dir %{php_pear_dir}/tests/Net_Wifi
-%dir %{php_pear_dir}/tests/Net_Wifi/tests
-%{php_pear_dir}/tests/Net_Wifi/tests/runtest.php
-%{php_pear_dir}/tests/Net_Wifi/tests/Wifi_testcase.php
+%{php_pear_dir}/tests/Net_Wifi
